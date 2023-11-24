@@ -36,6 +36,11 @@ struct Geo: Decodable {
         self.lat = Double(try container.decode(String.self, forKey: .lat)) ?? 0
         self.lng = Double(try container.decode(String.self, forKey: .lng)) ?? 0
     }
+    
+    init(lat: Double, lng: Double) {
+        self.lat = lat
+        self.lng = lng
+    }
 }
 
 struct Company: Decodable {

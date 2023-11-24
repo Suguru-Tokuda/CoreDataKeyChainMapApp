@@ -15,6 +15,7 @@ struct UsersMapApp: App {
         WindowGroup {
             ContentTabView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(MainCoordinator())
         }
     }
 }

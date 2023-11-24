@@ -20,7 +20,7 @@ struct ContentTabView: View {
                     title: { Text("Key Chain") },
                     icon: { Image(systemName: "key.fill") }
                 ) }
-            UserMapView()
+            UserMapStartView()
                 .tabItem { Label(
                     title: { Text("User Map") },
                     icon: { Image(systemName: "mappin") }

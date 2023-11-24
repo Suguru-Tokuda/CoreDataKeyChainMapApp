@@ -3,4 +3,54 @@
    uuid = "C095C7E7-2750-4DEC-8EF6-B5FEDB67F115"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D816D707-A97E-4EF9-B2FE-6A65983AA3E8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UsersMap/Views/UserMapView/UserMapAnnotationView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "D816D707-A97E-4EF9-B2FE-6A65983AA3E8 - d7e93b32f4daad5c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #2 () -&gt; () in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0 in UsersMap.UserMapAnnotationView.body.getter : some"
+                  moduleName = "UsersMap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/suguru/Documents/xcode-workspace/UsersMap/UsersMap/Views/UserMapView/UserMapAnnotationView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "D816D707-A97E-4EF9-B2FE-6A65983AA3E8 - 521a8de2eca92b4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.scaleEffect(_: CoreGraphics.CGFloat, anchor: SwiftUI.UnitPoint) -&gt; some&gt;&gt;.0 in UsersMap.UserMapAnnotationView.body.getter : some"
+                  moduleName = "UsersMap"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/suguru/Documents/xcode-workspace/UsersMap/UsersMap/Views/UserMapView/UserMapAnnotationView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "1240">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

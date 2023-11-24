@@ -18,7 +18,11 @@
 		BB7DCF8D2B0E890600D70D3E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DCF8C2B0E890600D70D3E /* LocationManager.swift */; };
 		BB7DCF902B0E8A4C00D70D3E /* MKCoordinateRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DCF8F2B0E8A4C00D70D3E /* MKCoordinateRegion.swift */; };
 		BB7DCF932B0E8C8200D70D3E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7DCF922B0E8C8200D70D3E /* User.swift */; };
+		BB91C0472B113D9C00B14096 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB91C0462B113D9C00B14096 /* MainCoordinator.swift */; };
+		BB91C0492B113F6800B14096 /* UserMapStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB91C0482B113F6800B14096 /* UserMapStartView.swift */; };
 		BBA5B4D92B0FAE930079A4A2 /* PetsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA5B4D82B0FAE930079A4A2 /* PetsViewModel.swift */; };
+		BBC2BFA22B112FB400502399 /* UserMapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC2BFA12B112FB400502399 /* UserMapAnnotationView.swift */; };
+		BBC2BFA42B11364B00502399 /* UserDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC2BFA32B11364B00502399 /* UserDetailsView.swift */; };
 		BBE7AA2D2B0F9FCE0069078A /* MapCameraPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE7AA2C2B0F9FCE0069078A /* MapCameraPosition.swift */; };
 		BBE7AA2F2B0FA3000069078A /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE7AA2E2B0FA3000069078A /* Pet.swift */; };
 		BBE7AA322B0FA4600069078A /* PetCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BBE7AA302B0FA4600069078A /* PetCoreData.xcdatamodeld */; };
@@ -44,7 +48,11 @@
 		BB7DCF8C2B0E890600D70D3E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		BB7DCF8F2B0E8A4C00D70D3E /* MKCoordinateRegion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKCoordinateRegion.swift; sourceTree = "<group>"; };
 		BB7DCF922B0E8C8200D70D3E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BB91C0462B113D9C00B14096 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		BB91C0482B113F6800B14096 /* UserMapStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMapStartView.swift; sourceTree = "<group>"; };
 		BBA5B4D82B0FAE930079A4A2 /* PetsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsViewModel.swift; sourceTree = "<group>"; };
+		BBC2BFA12B112FB400502399 /* UserMapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMapAnnotationView.swift; sourceTree = "<group>"; };
+		BBC2BFA32B11364B00502399 /* UserDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsView.swift; sourceTree = "<group>"; };
 		BBE7AA2C2B0F9FCE0069078A /* MapCameraPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCameraPosition.swift; sourceTree = "<group>"; };
 		BBE7AA2E2B0FA3000069078A /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		BBE7AA312B0FA4600069078A /* PetCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PetCoreData.xcdatamodel; sourceTree = "<group>"; };
@@ -88,6 +96,7 @@
 		BB7DCF672B0E880D00D70D3E /* UsersMap */ = {
 			isa = PBXGroup;
 			children = (
+				BB91C0452B113D4D00B14096 /* Coordinator */,
 				BBE7AA382B0FA8BF0069078A /* ContentTabView.swift */,
 				BB7DCF682B0E880D00D70D3E /* UsersMapApp.swift */,
 				BB7DCF6C2B0E880E00D70D3E /* Assets.xcassets */,
@@ -114,7 +123,7 @@
 		BB7DCF762B0E88D600D70D3E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				BB7DCF8A2B0E88F200D70D3E /* UserMapView.swift */,
+				BBC2BFA02B112F9900502399 /* UserMapView */,
 				BBE7AA3C2B0FA8F00069078A /* PetsView */,
 				BBE7AA3F2B0FA9170069078A /* KeyChainView.swift */,
 			);
@@ -166,6 +175,25 @@
 				BBE7AA2E2B0FA3000069078A /* Pet.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		BB91C0452B113D4D00B14096 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				BB91C0462B113D9C00B14096 /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		BBC2BFA02B112F9900502399 /* UserMapView */ = {
+			isa = PBXGroup;
+			children = (
+				BB7DCF8A2B0E88F200D70D3E /* UserMapView.swift */,
+				BBC2BFA12B112FB400502399 /* UserMapAnnotationView.swift */,
+				BBC2BFA32B11364B00502399 /* UserDetailsView.swift */,
+				BB91C0482B113F6800B14096 /* UserMapStartView.swift */,
+			);
+			path = UserMapView;
 			sourceTree = "<group>";
 		};
 		BBE7AA352B0FA5C40069078A /* CoreData */ = {
@@ -264,9 +292,12 @@
 				BBE7AA422B0FA9960069078A /* KeyChainViewModel.swift in Sources */,
 				BBE7AA342B0FA4FE0069078A /* PetCoreDataManager.swift in Sources */,
 				BB7DCF692B0E880D00D70D3E /* UsersMapApp.swift in Sources */,
+				BB91C0472B113D9C00B14096 /* MainCoordinator.swift in Sources */,
 				BB7DCF862B0E88D600D70D3E /* NetworkError.swift in Sources */,
 				BBE7AA2D2B0F9FCE0069078A /* MapCameraPosition.swift in Sources */,
 				BB7DCF8D2B0E890600D70D3E /* LocationManager.swift in Sources */,
+				BBC2BFA22B112FB400502399 /* UserMapAnnotationView.swift in Sources */,
+				BBC2BFA42B11364B00502399 /* UserDetailsView.swift in Sources */,
 				BBE7AA402B0FA9170069078A /* KeyChainView.swift in Sources */,
 				BB7DCF882B0E88D600D70D3E /* NetworkManager.swift in Sources */,
 				BB7DCF892B0E88D600D70D3E /* UserMapViewModel.swift in Sources */,
@@ -276,6 +307,7 @@
 				BB7DCF872B0E88D600D70D3E /* Constants.swift in Sources */,
 				BBA5B4D92B0FAE930079A4A2 /* PetsViewModel.swift in Sources */,
 				BBE7AA2F2B0FA3000069078A /* Pet.swift in Sources */,
+				BB91C0492B113F6800B14096 /* UserMapStartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
