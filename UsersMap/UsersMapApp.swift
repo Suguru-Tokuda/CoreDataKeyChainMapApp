@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct UsersMapApp: App {
+    let persistenceController = PersistenceController.shared
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentTabView()
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
