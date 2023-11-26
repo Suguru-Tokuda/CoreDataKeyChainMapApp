@@ -13,7 +13,7 @@ struct UsersMapApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentTabView()
+            ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
                 .environmentObject(MainCoordinator())
         }

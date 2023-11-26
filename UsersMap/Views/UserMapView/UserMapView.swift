@@ -24,6 +24,7 @@ struct UserMapView: View {
                             }
                     }
                 }
+                .ignoresSafeArea(edges: .top)
 ////                Map(position: $vm.cameraPosition, interactionModes: .all) {
 //                    ForEach(vm.users) { user in
 //                        Marker(coordinate: CLLocationCoordinate2D(latitude: user.address.geo.lat, longitude: user.address.geo.lng)) {

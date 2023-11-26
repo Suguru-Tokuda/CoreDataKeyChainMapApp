@@ -11,21 +11,24 @@ import SwiftUI
 @MainActor
 class MainCoordinator: ObservableObject {
     @Published var path = NavigationPath()
+    @Published var userPath = NavigationPath()
     var user: User?
     
     func startCoordinator() {
-        path.append(Page.userMap)
+        path.append(Page.tabs)
     }
     
     func goToUserDetailsView(user: User) {
         self.user = user
-        path.append(Page.userDetails)
+        userPath.append(Page.userDetails)
     }
     
     @ViewBuilder
     func getPage(page: Page) -> some View {
         switch page {
-        case .userMap:
+        case .tabs:
+            ContentTabView()
+        case .usermap:
             UserMapView()
         case .userDetails:
             if let user = self.user {
@@ -38,7 +41,7 @@ class MainCoordinator: ObservableObject {
 }
 
 enum Page: String, CaseIterable, Identifiable {
-    case userMap, userDetails
+    case tabs, usermap, userDetails
     
     var id: String { self.rawValue }
 }

@@ -11,10 +11,11 @@ import CoreData
 import SwiftUI
 import MapKit
 
+@MainActor
 class UserMapViewModel: ObservableObject {
     var users: [User] = []
     
-    @Published var cameraPosition: MapCameraPosition = .region(MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 37.3159, longitude: -81.1496), span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)))
+//    @Published var cameraPosition: MapCameraPosition = .region(MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 37.3159, longitude: -81.1496), span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)))
     @Published var region: MKCoordinateRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 37.3159, longitude: -81.1496), span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2))
     @Published var isErrorOccured: Bool = false
     @Published var isLoading: Bool = false

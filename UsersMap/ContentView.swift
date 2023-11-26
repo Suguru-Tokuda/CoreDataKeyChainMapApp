@@ -1,18 +1,18 @@
 //
-//  UserMapStartView.swift
+//  ContentView.swift
 //  UsersMap
 //
-//  Created by Suguru Tokuda on 11/24/23.
+//  Created by Suguru Tokuda on 11/25/23.
 //
 
 import SwiftUI
 
-struct UserMapStartView: View {
+struct ContentView: View {
     @EnvironmentObject var coordinator: MainCoordinator
     
     var body: some View {
-        NavigationStack(path: $coordinator.userPath) {
-            coordinator.getPage(page: .usermap)
+        NavigationStack(path: $coordinator.path) {
+            coordinator.getPage(page: .tabs)
                 .navigationDestination(for: Page.self) { page in
                     coordinator.getPage(page: page)
                 }
@@ -21,6 +21,5 @@ struct UserMapStartView: View {
 }
 
 #Preview {
-    UserMapStartView()
-        .environmentObject(MainCoordinator())
+    ContentView()
 }
